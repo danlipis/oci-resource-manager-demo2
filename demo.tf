@@ -17,6 +17,6 @@ resource "oci_objectstorage_bucket" "create_bucket" {
     access_type = "PublicAccess"
 }
 
-output "new_bucket" {
+output "new_bucket2" {
   value = oci_objectstorage_bucket.create_bucket
 }
