@@ -14,7 +14,7 @@ resource "oci_objectstorage_bucket" "create_bucket" {
     compartment_id = var.compartment_ocid
     name = var.bucket_name
     namespace = data.oci_objectstorage_namespace.namespace.namespace
-    access_type = "NoPublicAccess"
+    access_type = "ObjectRead"
 }
 
 output "new_bucket2" {
